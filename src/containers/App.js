@@ -46,6 +46,7 @@ class App extends React.Component {
             return (
                 <div className='tc'>
                     <h1 className='f1'>AvatarsBuddies</h1>
+                    <h4>By Jules Tanto</h4>
                     <Searchbox searchChange={this.onSearchChange}/>
                     <Scroll>
                         <ErrorBoundry>
