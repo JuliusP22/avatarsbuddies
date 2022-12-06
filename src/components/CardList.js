@@ -3,6 +3,10 @@ import Card from './Card';
 
 
 const CardList = ({ avatars }) => {
+    // if (true) {
+    //     throw new Error('Nooooo')
+    // }
+
     return (
         <div>
             {

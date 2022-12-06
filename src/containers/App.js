@@ -5,6 +5,8 @@ import Searchbox from '../components/Searchbox';
 // import { render } from '@testing-library/react';
 import './App.css';
 import Scroll from '../components/Scroll';
+import ErrorBoundry from '../components/componenterrorboundary';
+
 
 
 class App extends React.Component {
@@ -46,7 +48,9 @@ class App extends React.Component {
                     <h1 className='f1'>AvatarsBuddies</h1>
                     <Searchbox searchChange={this.onSearchChange}/>
                     <Scroll>
+                        <ErrorBoundry>
                         <CardList avatars = { filterAvatars } />
+                        </ErrorBoundry>
                     </Scroll>
                 </div>
             );    
